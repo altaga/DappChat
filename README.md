@@ -1,5 +1,55 @@
 # DappChat
+
+![Image](https://i.ibb.co/TBKwbSD/logo.png)
+
 DappChat is a Decentralized chat application with document transfer capabilities and NFT services, while providing TradFi conveniences.
 
+# Watch our demo video:
 
-Yo digo que tu pinche culo jaimeco betaquillin
+[![Image](https://i.ibb.co/j3DCtPZ/image.png)](PENDING!)
+
+# Test the product:
+
+## URL: https://dappchat-deploy-6a5nkr.spheron.app/
+
+Instructions here: https://github.com/altaga/DappChat#how-it-works
+
+# Introduction and Problem Statement:
+
+DOK
+
+# Our Solution:
+
+DappChat is a Decentralized chat application with document transfer capabilities and NFT services, while providing TradFi conveniences.
+
+## Diagram:
+
+![Image](https://i.ibb.co/wJKf9PG/scheme-drawio.png)
+
+- Polygon Network:
+  - Interaccion con contrato de chat para mandar mensajes.
+  - Mandar Matic token
+  - Desplegar y Mint NFT.
+- Valist:
+  - Tenemos nuestra version del software publicada con Valist.
+- Sphereon:
+  - Hacemos uso de su servicio de Deployment para produccion.
+- Covalent:
+  - Obtencion de los balances de la cuenta.
+  - Obtenemos los contratos de los NFT.
+- ChainSafe:
+  - Subir los archivos a IPFS sobre una misma carpeta de refrencia.
+  - Obtener los archivos subidos a IPFS por carpeta.
+- NFT.Storage:
+  - A travez de la API de NFT.Storage subimos los archivos y metadata a IPFS. Posteriomente mintamos el NFT en la red de Polygon.
+
+# How it works:
+
+Use Polygon Matic Testnet on Metamask Wallet!!!!
+
+- Get it on: https://metamask.io/
+
+- Follow: https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/
+
+Needless to say, you need a friend to test or two browsers with two Polygon Addresses with Metamask.
+
