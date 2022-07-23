@@ -28,9 +28,11 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 - Polygon Network:
   - Interaccion con contrato de chat para mandar mensajes.
-    - Chat Contract Address: [0x7edf4BDFD63a5A98475f6831b9e42176aa21d509](https://mumbai.polygonscan.com/address/0x7edf4BDFD63a5A98475f6831b9e42176aa21d509)
+  - Chat Contract Address: [0x7edf4BDFD63a5A98475f6831b9e42176aa21d509](https://mumbai.polygonscan.com/address/0x7edf4BDFD63a5A98475f6831b9e42176aa21d509).
+  - Chat SmartContract: 
   - Mandar Matic token
   - Desplegar y Mint NFT.
+  - NFT SmartContract:
 - Valist:
   - Tenemos nuestra version del software publicada con Valist.
 - Sphereon:
@@ -43,13 +45,15 @@ DappChat is a Decentralized chat application with document transfer capabilities
   - Obtener los archivos subidos a IPFS por carpeta.
 - NFT.Storage:
   - A travez de la API de NFT.Storage subimos los archivos y metadata a IPFS. Posteriomente mintamos el NFT en la red de Polygon.
-- IPFS Gateway:
+- IPFS Gateways:
   - Utilizamos Gateways de IPFS publicos para obtener nuestros archivos, los gateways utilizados son.
     - https://ipfs.io/ipfs/
     - https://cf-ipfs.com/ipfs/
     - https://cloudflare-ipfs.com/ipfs/
     - https://gateway.pinata.cloud/ipfs/
     - https://gateway.ipfs.io/ipfs/
+
+
 
 # How it works:
 
