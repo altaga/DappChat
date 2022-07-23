@@ -52,9 +52,9 @@ DappChat is a Decentralized chat application with document transfer capabilities
 - Valist:
   - Tenemos nuestra version del software publicada con Valist.
     - Valist URL: https://app.valist.io/altaga/dappchat
-- Sphereon:
+- Spheron:
   - Hacemos uso de su servicio de Deployment para produccion.
-    - Sphereon URL: https://dappchat-deploy-6a5nkr.spheron.app/
+    - Spheron URL: https://dappchat-deploy-6a5nkr.spheron.app/
 - Covalent:
   - Obtencion de los balances de la cuenta.
   - Obtenemos los contratos de los NFT.
@@ -267,17 +267,17 @@ NOTA: La version de Valist no soporta las etiquetas HTML como <img> entonces las
 
 URL: https://app.valist.io/altaga/dappchat
 
-## Sphereon:
+## Spheron:
 
 Gracias a Sphereron pudimos decentralizar tambien el proceso de deployment y hosting de nuestra aplicacion, ademas podemos hacer proceso de build y deploy con solo subir el codigo fuente en reactjs.
 
-![Sphereon](https://i.ibb.co/4MtGNdq/image.png)
+![Spheron](https://i.ibb.co/4MtGNdq/image.png)
 
 URL: https://dappchat-deploy-6a5nkr.spheron.app/
 
 NOTA: En el caso de una aplicacion de ReactJS deberas de hacer una aplicacion con renderizado condicional SIN ROUTING, debido a que al momento de intentar hacer rounting en la pagina esta intentara acceder a una ruta de IPFS que no tendra contenido y te dara error.
 
-![Sphereon-error](https://i.ibb.co/28Xmw8v/image.png)
+![Spheron-error](https://i.ibb.co/28Xmw8v/image.png)
 
 ## Covalent:
 
