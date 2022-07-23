@@ -59,7 +59,7 @@ DappChat is a Decentralized chat application with document transfer capabilities
   - Obtencion de los balances de la cuenta.
   - Obtenemos los contratos de los NFT.
 
-# How it built:
+# How it's built:
 
 ## Filecoin and IPFS:
 
