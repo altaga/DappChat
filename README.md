@@ -115,7 +115,7 @@ A su vez podemos obtener facilmente la lista de los archivos subidos por este us
         axios(config)
             .then((res) => this.setState({ files: res.data }))
             .catch((error) => { console.log(error) });
-  }
+    }
 
 - Explorer:
 
@@ -221,6 +221,7 @@ Con este formato, podemos separar el mensaje de lo que nos interesa sel texto y 
 Por ultimo las prices feeds de nuestro proyecto las obtenemos con el siguiente codigo y contrato.
 
 Code:
+        
     async getPriceFeed() {
         try {
             let contract = new ethers.Contract(priceFeed, abi3(), providerMatic);
@@ -271,6 +272,8 @@ URL: https://app.valist.io/altaga/dappchat
 Gracias a Sphereron pudimos decentralizar tambien el proceso de deployment y hosting de nuestra aplicacion, ademas podemos hacer proceso de build y deploy con solo subir el codigo fuente en reactjs.
 
 ![Sphereon](https://i.ibb.co/4MtGNdq/image.png)
+
+URL: https://dappchat-deploy-6a5nkr.spheron.app/
 
 NOTA: En el caso de una aplicacion de ReactJS deberas de hacer una aplicacion con renderizado condicional SIN ROUTING, debido a que al momento de intentar hacer rounting en la pagina esta intentara acceder a una ruta de IPFS que no tendra contenido y te dara error.
 
