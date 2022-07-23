@@ -28,15 +28,19 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 - Polygon Network:
   - Interaccion con contrato de chat para mandar mensajes.
-  - Chat Contract Address: [0x7edf4BDFD63a5A98475f6831b9e42176aa21d509](https://mumbai.polygonscan.com/address/0x7edf4BDFD63a5A98475f6831b9e42176aa21d509).
-  - Chat SmartContract: 
+    - Chat Contract Address: [0x7edf4BDFD63a5A98475f6831b9e42176aa21d509](https://mumbai.polygonscan.com/address/0x7edf4BDFD63a5A98475f6831b9e42176aa21d509).
+    - Chat SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/Chat.sol
   - Mandar Matic token
-  - Desplegar y Mint NFT.
-  - NFT SmartContract:
+  - Deploy NFT Contract and Mint NFT.
+    - NFT SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/NFT-Token.sol
+  - Los datafeeds de nuestra aplicacion son directamente de los price data feeds de Chainlink.
+    - https://data.chain.link/polygon/mainnet
 - Valist:
   - Tenemos nuestra version del software publicada con Valist.
+    - Valist URL: https://app.valist.io/altaga/dappchat
 - Sphereon:
   - Hacemos uso de su servicio de Deployment para produccion.
+    - Sphereon URL: https://dappchat-deploy-6a5nkr.spheron.app/
 - Covalent:
   - Obtencion de los balances de la cuenta.
   - Obtenemos los contratos de los NFT.
@@ -52,6 +56,14 @@ DappChat is a Decentralized chat application with document transfer capabilities
     - https://cloudflare-ipfs.com/ipfs/
     - https://gateway.pinata.cloud/ipfs/
     - https://gateway.ipfs.io/ipfs/
+
+# How it built:
+
+Polygon Network
+
+![Polygon](https://i.ibb.co/rwSJctk/matic-token.png)
+
+La red de polygon se utilizo para deslplegar todos los contratos, tanto los contratos de todos los NFT como el contrato principal del chat, en este caso fue pensado por su velocidad y bajas fees, haciendo facilmente escalable el poder realizar un chat eficaz.
 
 
 
