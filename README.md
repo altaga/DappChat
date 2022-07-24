@@ -280,9 +280,9 @@ Contract Price Feeds: https://github.com/altaga/DappChat/blob/main/Contract/Pric
 
 Thanks to valist we have a more secure way to distribute our code in a decentralized way and at the same time be able to keep track of the versions of our code.
 
-![Valist](Imagen faltante hasta finalizar el repo)
+![Valist](https://i.ibb.co/7jw4FJ6/image.png)
 
-In this case during development we reached version 1.0.4
+In this case during development we reached version 1.0.3
 
 NOTE: The version of Valist does not support HTML tags like <img> so the images in your post must be in the format that uses: []()
 
