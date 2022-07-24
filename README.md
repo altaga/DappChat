@@ -30,7 +30,6 @@ Nevertheless, messaging companies are still operating under practices that sugge
 
 Data is the most valuable resource an individual has and through blockchain technology this privacy issue can be quenched. We think that the way to launch a competitor is through the DeFi ecosystem as it is growing at an incredible rate and Serum is one of the premium platforms for that.
 
-
 # Our Solution:
 
 DappChat is a Decentralized chat application with document transfer capabilities and NFT services, while providing TradFi conveniences.
