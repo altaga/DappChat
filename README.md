@@ -18,7 +18,7 @@ Instructions here: https://github.com/altaga/DappChat#how-it-works
 
 Messaging systems and apps such as whatsapp, telegram, wechat, facebook messenger and so many others have become ubiquitous nowadays. And not only that, but businesses and individuals have become partially dependent on these and we trust them because of the number of people that use them. With more than 3.6 billion people worldwide and over 145 billion messages being sent every day. 
 
-<img src="https://assets-global.website-files.com/5e42772e6a8cfd42a9715206/609a4d9ba39eb4aaa1308844_growth-of-messaging-apps-2016.jpeg">
+![Chart](https://assets-global.website-files.com/5e42772e6a8cfd42a9715206/609a4d9ba39eb4aaa1308844_growth-of-messaging-apps-2016.jpeg)
 
 This has brought forth stratospheric market valuations.
 
@@ -26,7 +26,7 @@ WhatsApp was acquired for $19 billion in 2014, Telegram has over 500 million use
 
 But there's a huge privacy problem in regards to siloed enterprises controlling data. These are regarding several right’s violations mainly around privacy such as Data sharing violations like the fine of 266 million euros that Whattsapp received by the EU in September last year, Telegram’s constant issues with cyber theft mainly around bank accounts and quite a large number of cases of Blackmail. And private data leaks such as the one that happened through facebook in April 2021.
 
-<img src="http://cdn.statcdn.com/Infographic/images/normal/25691.jpeg">
+![Graph](http://cdn.statcdn.com/Infographic/images/normal/25691.jpeg)
 
 Nevertheless, messaging companies are still operating under practices that suggest data governance has not been solved.
 
