@@ -12,6 +12,14 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 ## URL: https://dappchat-deploy-6a5nkr.spheron.app/
 
+Use Polygon Matic Testnet on Metamask Wallet!!!!
+
+- Get it on: https://metamask.io/
+
+- Follow: https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/
+
+Needless to say, you need a friend to test or two browsers with two Polygon Addresses with Metamask.
+
 # Introduction and Problem Statement:
 
 Messaging systems and apps such as whatsapp, telegram, wechat, facebook messenger and so many others have become ubiquitous nowadays. And not only that, but businesses and individuals have become partially dependent on these and we trust them because of the number of people that use them. With more than 3.6 billion people worldwide and over 145 billion messages being sent every day. 
@@ -368,13 +376,3 @@ Get NFT's:
                 })
             }
     }
-
-# How it works:
-
-Use Polygon Matic Testnet on Metamask Wallet!!!!
-
-- Get it on: https://metamask.io/
-
-- Follow: https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/
-
-Needless to say, you need a friend to test or two browsers with two Polygon Addresses with Metamask.
