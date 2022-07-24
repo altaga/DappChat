@@ -47,38 +47,40 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 ![Image](https://i.ibb.co/wJKf9PG/scheme-drawio.png)
 
+### Tech we Use:
+
 - Filecoin:
     - ChainSafe:
-      - Subir los archivos a IPFS sobre una misma carpeta de refrencia.
-      - Obtener los archivos subidos a IPFS por carpeta.
+      - Upload the files to IPFS on the same reference folder.
+      - Get files uploaded to IPFS by folder.
     - NFT.Storage:
-      - A travez de la API de NFT.Storage subimos los archivos y metadata a IPFS. Posteriomente mintamos el NFT en la red de Polygon.
+      - Through the NFT.Storage API we upload the files and metadata to IPFS. We then mined the NFT on the Polygon network.
     - IPFS Gateways:
-      - Utilizamos Gateways de IPFS publicos para obtener nuestros archivos, los gateways utilizados son.
+      - We use public IPFS Gateways to obtain our files, the gateways used are.
           - https://ipfs.io/ipfs/
           - https://cf-ipfs.com/ipfs/
           - https://cloudflare-ipfs.com/ipfs/
           - https://gateway.pinata.cloud/ipfs/
           - https://gateway.ipfs.io/ipfs/
 - Polygon Network:
-  - Interaccion con contrato de chat para mandar mensajes.
+  - Interaction with chat contract to send messages.
     - Chat Contract Address: [0x7edf4BDFD63a5A98475f6831b9e42176aa21d509](https://mumbai.polygonscan.com/address/0x7edf4BDFD63a5A98475f6831b9e42176aa21d509).
     - Chat SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/Chat.sol
   - Mandar Matic token
   - Deploy NFT Contract and Mint NFT.
     - NFT SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/NFT-Token.sol
-  - Los datafeeds de nuestra aplicacion son directamente de los price data feeds de Chainlink.
+  - The datafeeds in our app are directly from Chainlink's price data feeds.
     - Chainlink Docs: https://data.chain.link/polygon/mainnet
     - Price Datafeed SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/PriceConsumerV3.sol
 - Valist:
-  - Tenemos nuestra version del software publicada con Valist.
+  - We have our version of the software documentation released with Valist.
     - Valist URL: https://app.valist.io/altaga/dappchat
 - Spheron:
-  - Hacemos uso de su servicio de Deployment para produccion.
+  - We make use of your Deployment service for production.
     - Spheron URL: https://dappchat-deploy-6a5nkr.spheron.app/
 - Covalent:
-  - Obtencion de los balances de la cuenta.
-  - Obtenemos los contratos de los NFT.
+  - Obtaining account balances.
+  - We get the contracts from the NFTs.
 
 # How it's built:
 
@@ -90,13 +92,13 @@ Filecoin Judging Criteria:
 
 ![Judging](https://i.ibb.co/55z9zxp/image.png)
 
-Filecoin e IPFS son el core de nuestro proyecto ya que casi cada parte del mismo funciona gracias a un producto realizado por la comunidad de Filecoin.
+Filecoin and IPFS are the core of our project since almost every part of it works thanks to a product made by the Filecoin community.
 
 - Ventana de chat:
 
 ![Chat](https://i.ibb.co/3kpXRhH/image.png)
 
-El poder mandar archivos desde nuestra ventana de chat es posible gracias a el servicio de Chainsafe (https://chainsafe.io/), ya que con sus API's podemos subir los archivos a IPFS directamente asociandolos previamente a un folder, que en este caso es la misma address (esto con el fin de podernos ahorrar el uso de base de datos), y posterior a esto mandar el CID del contenido a el destinatario.
+Being able to send files from our chat window is possible thanks to the Chainsafe service (https://chainsafe.io/), since with its API's we can upload the files to IPFS directly, previously associating them to a folder, which in this case is the same address (this in order to save us the use of the database), and after this send the CID of the content to the recipient.
 
     async uploadFile(address) {
         return new Promise((resolve, reject) => {
@@ -121,7 +123,7 @@ El poder mandar archivos desde nuestra ventana de chat es posible gracias a el s
         })
     }
 
-A su vez podemos obtener facilmente la lista de los archivos subidos por este usuario gracias a su API de listado.
+In turn, we can easily obtain the list of files uploaded by this user thanks to its listing API.
 
     getFiles(address) {
         var data = JSON.stringify({
@@ -144,11 +146,11 @@ A su vez podemos obtener facilmente la lista de los archivos subidos por este us
 
 - Explorer:
 
-En el caso del explorer es fundamental el uso de Chainsafe, ya que con esto podemos obtener los CID de los contenidos que hemos subido a chainsafe desde nuestro chat y a su vez los archivos que hayamos subido desde el explorer.
+In the case of the explorer, the use of Chainsafe is essential, since with this we can obtain the CID of the contents that we have uploaded to chainsafe from our chat and, in turn, the files that we have uploaded from the explorer.
 
 ![Explorer](https://i.ibb.co/XxFmZvq/image.png)
 
-Sin embargo en este caso la parte importante es que los archivos recibidos por el chat a su vez seran agregados a nuestro explorer, siendo contenido que tenemos como shared, sobre todo podremos ver los archivos Shared segun la conversacion que tengamos activa en el chat, para una mayor organizacion.
+However, in this case the important part is that the files received by the chat will in turn be added to our explorer, being content that we have as shared, above all we will be able to see the Shared files according to the conversation that we have active in the chat, to a larger organization.
 
     async getSharedFiles(add1, add2) {
         let to = []
@@ -182,11 +184,11 @@ Sin embargo en este caso la parte importante es que los archivos recibidos por e
 
 - NFT Gallery:
 
-Toda la galeria que tenemos en nuestro proyecto fue totalmente realizada desde nuestra UI, ya que tenemos ya en la pagina web integrada la API de NFT.Storage y el smart contract de los NFT Token.
+All the gallery that we have in our project was completely made from our UI, since we already have the NFT.Storage API and the NFT Token smart contract integrated in the web page.
 
 ![NFT-Gallery](https://i.ibb.co/VY0rbRn/image.png)
 
-De forma sencilla es posible crear nuevos NFT sobre nuestra plataforma, e incluso poder crear una coleccion completa desde la misma, como lo son nuestros Phanties edicion limitada.
+In a simple way it is possible to create new NFTs on our platform, and even be able to create a complete collection from it, such as our limited edition Phanties.
 
     async NFTstorageStore() {
         return new Promise((resolve, reject) => {
@@ -218,15 +220,15 @@ De forma sencilla es posible crear nuevos NFT sobre nuestra plataforma, e inclus
 
 ![Polygon](https://i.ibb.co/rwSJctk/matic-token.png)
 
-La red de polygon se utilizo para deslplegar todos los contratos, tanto los contratos de todos los NFT como el contrato principal del chat, en este caso fue pensado por su velocidad y bajas fees, haciendo facilmente escalable el poder realizar un chat eficaz.
+The polygon network was used to deploy all the contracts, both the contracts of all the NFTs and the main chat contract, in this case it was designed for its speed and low fees, making it easily scalable to carry out an effective chat.
 
-El contrato del chat nos permite adjuntar cualquier clase de texto a nuestro mensaje, en nuestro caso utilizamos el formato de discord para mandar los a CID de los archivos e intrucciones sobre los mensajes.
+The chat contract allows us to attach any kind of text to our message, in our case we use the discord format to send the CID of the files and instructions about the messages.
 
 ![Message](https://i.ibb.co/dB9SJk2/image.png)
 
     Hi!:file:QmdF4hz6Z7fQ9qNSQJVHRxqHDSFjEEcDdshqK8RZZgW9EN:filef::type:image/png:typef:
 
-Con este formato, podemos separar el mensaje de lo que nos interesa sel texto y asi desplegarlo en el visualizador.
+With this format, we can separate the message from what interests us, the text and thus display it on the display.
 
     if (item.mess.indexOf(":req:") > -1) {
         delString1 = item.mess.substring(item.mess.indexOf(":req:"), item.mess.indexOf(":reqf:") + 6)
@@ -243,7 +245,7 @@ Con este formato, podemos separar el mensaje de lo que nos interesa sel texto y 
 
 - Chat SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/Chat.sol
 
-Por ultimo las prices feeds de nuestro proyecto las obtenemos con el siguiente codigo y contrato.
+Finally, the prices feeds of our project are obtained with the following code and contract.
 
 Code:
         
@@ -282,31 +284,31 @@ Contract Price Feeds: https://github.com/altaga/DappChat/blob/main/Contract/Pric
 
 ## Valist: 
 
-Gracias a valist tenemos una forma mas segura de distribuir nuestro codigo de forma decentralizada y a su vez poder llevar un control de las versiones de nuestro codigo.
+Thanks to valist we have a more secure way to distribute our code in a decentralized way and at the same time be able to keep track of the versions of our code.
 
 ![Valist](Imagen faltante hasta finalizar el repo)
 
-En este caso durante el desarrollo llegamos a la version 1.0.4
+In this case during development we reached version 1.0.4
 
-NOTA: La version de Valist no soporta las etiquetas HTML como <img> entonces las imaganes en tu publicacion debe de ser en formato []()
+NOTE: The version of Valist does not support HTML tags like <img> so the images in your post must be in the format that uses: []()
 
 URL: https://app.valist.io/altaga/dappchat
 
 ## Spheron:
 
-Gracias a Sphereron pudimos decentralizar tambien el proceso de deployment y hosting de nuestra aplicacion, ademas podemos hacer proceso de build y deploy con solo subir el codigo fuente en reactjs.
+Thanks to Sphere On we were also able to decentralize the deployment and hosting process of our application, we can also do the build and deploy process just by uploading the source code in reactjs.
 
 ![Spheron](https://i.ibb.co/4MtGNdq/image.png)
 
 URL: https://dappchat-deploy-6a5nkr.spheron.app/
 
-NOTA: En el caso de una aplicacion de ReactJS deberas de hacer una aplicacion con renderizado condicional SIN ROUTING, debido a que al momento de intentar hacer rounting en la pagina esta intentara acceder a una ruta de IPFS que no tendra contenido y te dara error.
+NOTE: In the case of a ReactJS application, you must make an application with conditional rendering WITHOUT ROUTING, because when trying to do routing on the page it will try to access an IPFS route that will not have content and will give you an error.
 
 ![Spheron-error](https://i.ibb.co/28Xmw8v/image.png)
 
 ## Covalent:
 
-Nuestra aplicacion al requerir que rapidamente se busque el balance inicial de nuestra Wallet y a su vez si esta tiene NFT's en ella, pudimos encontrar una forma de hacerlo eficazmente desde las API's de Covalent.
+Our application by requiring that we quickly look up the initial balance of our Wallet and in turn if it has NFT's in it, we were able to find a way to do it efficiently from the Covalent API's.
 
 Get Balance:
 
