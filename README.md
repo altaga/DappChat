@@ -60,7 +60,7 @@ DappChat is a Decentralized chat application with document transfer capabilities
   - Interaction with chat contract to send messages.
     - Chat Contract Address: [0x7edf4BDFD63a5A98475f6831b9e42176aa21d509](https://mumbai.polygonscan.com/address/0x7edf4BDFD63a5A98475f6831b9e42176aa21d509).
     - Chat SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/Chat.sol
-  - Mandar Matic token
+  - Send Matic token
   - Deploy NFT Contract and Mint NFT.
     - NFT SmartContract: https://github.com/altaga/DappChat/blob/main/Contract/NFT-Token.sol
   - The datafeeds in our app are directly from Chainlink's price data feeds.
@@ -88,7 +88,7 @@ Filecoin Judging Criteria:
 
 Filecoin and IPFS are the core of our project since almost every part of it works thanks to a product made by the Filecoin community.
 
-- Ventana de chat:
+- Chat window:
 
 ![Chat](https://i.ibb.co/3kpXRhH/image.png)
 
