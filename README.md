@@ -65,6 +65,10 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 ![Filecoin](https://i.ibb.co/gSd7vfk/Fil.png)![IPFS](https://i.ibb.co/sRbWQWj/Image.png)
 
+Filecoin Judging Criteria:
+
+![Judging](https://i.ibb.co/55z9zxp/image.png)
+
 Filecoin e IPFS son el core de nuestro proyecto ya que casi cada parte del mismo funciona gracias a un producto realizado por la comunidad de Filecoin.
 
 - Ventana de chat:
