@@ -6,7 +6,7 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 # Watch our demo video:
 
-[![Image](https://i.ibb.co/j3DCtPZ/image.png)](PENDING!)
+[![Image](https://i.ibb.co/j3DCtPZ/image.png)](https://youtu.be/cMODf4ynLUc)
 
 # Test the product:
 
