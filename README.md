@@ -26,7 +26,7 @@ WhatsApp was acquired for $19 billion in 2014, Telegram has over 500 million use
 
 But there's a huge privacy problem in regards to siloed enterprises controlling data. These are regarding several right’s violations mainly around privacy such as Data sharing violations like the fine of 266 million euros that Whattsapp received by the EU in September last year, Telegram’s constant issues with cyber theft mainly around bank accounts and quite a large number of cases of Blackmail. And private data leaks such as the one that happened through facebook in April 2021.
 
-![Graph](http://cdn.statcdn.com/Infographic/images/normal/25691.jpeg)
+![Graph](https://i.ibb.co/7RTT2yy/Image.png)
 
 Nevertheless, messaging companies are still operating under practices that suggest data governance has not been solved.
 
@@ -80,7 +80,7 @@ DappChat is a Decentralized chat application with document transfer capabilities
 
 ## Filecoin and IPFS:
 
-![Filecoin](https://i.ibb.co/gSd7vfk/Fil.png)![IPFS](https://i.ibb.co/sRbWQWj/Image.png)
+![Filecoin-IPFS](https://i.ibb.co/Jpy5vTh/Fil.png)
 
 Filecoin Judging Criteria:
 
@@ -381,4 +381,3 @@ Use Polygon Matic Testnet on Metamask Wallet!!!!
 - Follow: https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/
 
 Needless to say, you need a friend to test or two browsers with two Polygon Addresses with Metamask.
-
