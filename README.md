@@ -282,13 +282,13 @@ Thanks to valist we have a more secure way to distribute our code in a decentral
 
 In this case during development we reached version 1.0.3
 
-NOTE: The version of Valist does not support HTML tags like <img> so the images in your post must be in the format that uses: []()
+NOTE: The version of Valist does not support HTML tags like <img> so the images in your post must be in the format that uses: [] ()
 
 URL: https://app.valist.io/altaga/dappchat
 
 ## Spheron:
 
-Thanks to Sphere On we were also able to decentralize the deployment and hosting process of our application, we can also do the build and deploy process just by uploading the source code in reactjs.
+Thanks to Spheron we were also able to decentralize the deployment and hosting process of our application, we can also do the build and deploy process just by uploading the source code in reactjs.
 
 ![Spheron](https://i.ibb.co/4MtGNdq/image.png)
 
